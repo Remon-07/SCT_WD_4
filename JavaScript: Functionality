@@ -1,0 +1,8 @@
+const taskForm = document.getElementById('taskForm');
+const taskInput = document.getElementById('taskInput');
+const taskDateTime = document.getElementById('taskDateTime');
+const taskList = document.getElementById('taskList');
+
+taskForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    addTask(taskInput.value, taskDateTime.value);
